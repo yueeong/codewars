@@ -53,10 +53,11 @@ function getSum(a, b) {
 console.log(getSum(600,-1));
 
 function list(names){
-  for (x in names) {
-      console.log(names[x].name);
-  }
-  return "asas";
+    catThemUp(arr) {}
+    for (x in names) {
+        console.log(names[x].name);
+    }
+    return "asas";
 }
 var names = [{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'}];
 console.log(list(names));
