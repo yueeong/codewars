@@ -12,7 +12,6 @@ function accum(s) {
     return newstr;
 }
 
-
 function getMiddle(s) {
     if (s.length % 2 == 0) {
         console.log("even");
@@ -50,7 +49,7 @@ function getSum(a, b) {
     }
 }
 
-console.log(getSum(600,-1));
+console.log(getSum(6,-1));
 
 function list(names){
     function catThemUp(a,b) { return a + ',' + b};
