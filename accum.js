@@ -53,7 +53,7 @@ function getSum(a, b) {
 console.log(getSum(600,-1));
 
 function list(names){
-    catThemUp(arr) {}
+    function catThemUp(a,b) { return a + ',' + b};
     for (x in names) {
         console.log(names[x].name);
     }
