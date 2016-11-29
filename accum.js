@@ -82,17 +82,6 @@ function list(names) {
     }
     return str;
 }
-var names = [{
-    name: 'Bart'
-}, {
-    name: 'Lisa'
-}];
-var one = [{name: 'One'}];
-var g = [{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'},{name: 'Marlllge'},{name: 'Maaaaarge'}];
-var j = [{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'}];
-var three = [{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'}];
-console.log(list(one));
+var names =  [{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'},{name: 'Marlllge'},{name: 'Maaaaarge'}];
 console.log(list(names));
-console.log(list(g));
-console.log(list(j));
-console.log(list(three));
+
