@@ -58,7 +58,8 @@ function list(names) {
     for (var x in names) {
         console.log(names[x].name);
     }
-    return "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+    return names.reduce(catThemUp, 0);
+
 }
 var names = [{
     name: 'Bart'
