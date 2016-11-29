@@ -58,25 +58,25 @@ function list(names) {
     }
 
     str = "";
-    if ( arr.length === 2) {
+    if ( arr.length == 2) {
         console.log("yea 2");
         str += arr[0] + " & " + arr[1];
     }
-    else if (arr.length === 1) {
+    else if (arr.length == 1) {
         console.log("yea 1");
         str = arr[0];
     }
     else if ( arr.length > 2) {
         console.log("yea 3 or more");
         for (var f in arr) {
-            if ( x < arr.length-2) {
-                str += arr[x] + ", ";
+            if ( f < arr.length-2) {
+                str += arr[f] + ", ";
             }
-            else if (x < arr.length-1) {
-                str += arr[x] + " & ";
+            else if (f < arr.length-1) {
+                str += arr[f] + " & ";
             }
-            else if (x == arr.length-1) {
-                str += arr[x];
+            else if (f == arr.length-1) {
+                str += arr[f];
             }
         }
     }
@@ -86,13 +86,13 @@ var names = [{
     name: 'Bart'
 }, {
     name: 'Lisa'
-}, {
-    name: 'Lisa'
-}, {
-    name: 'Lisa'
-}, {
-    name: 'Lisa'
 }];
-
-var g = [{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'}];
+var one = [{name: 'One'}];
+var g = [{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'},{name: 'Marlllge'},{name: 'Maaaaarge'}];
+var j = [{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'}];
+var three = [{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'}];
+console.log(list(one));
+console.log(list(names));
 console.log(list(g));
+console.log(list(j));
+console.log(list(three));
