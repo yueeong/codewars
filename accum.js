@@ -54,7 +54,7 @@ console.log(getSum(2, -1));
 function list(names) {
     var arr = [];
     for (var x in names) {
-        arr.push(names[x].name);
+        if (names[x].length !== 0) { arr.push(names[x].name); }
     }
 
     str = "";
