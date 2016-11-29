@@ -49,25 +49,50 @@ function getSum(a, b) {
     }
 }
 
-console.log(getSum(6, -1));
+console.log(getSum(2, -1));
 
 function list(names) {
-    function catThemUp(a, b) {
-        return a.name + ',' + b.name;
-    }
+    var arr = [];
     for (var x in names) {
-        console.log(names[x].name);
+        arr.push(names[x].name);
     }
-    return names.reduce(catThemUp, 0);
 
+    str = "";
+    if ( arr.length === 2) {
+        console.log("yea 2");
+        str += arr[0] + " & " + arr[1];
+    }
+    else if (arr.length === 1) {
+        console.log("yea 1");
+        str = arr[0];
+    }
+    else if ( arr.length > 2) {
+        console.log("yea 3 or more");
+        for (var f in arr) {
+            if ( x < arr.length-2) {
+                str += arr[x] + ", ";
+            }
+            else if (x < arr.length-1) {
+                str += arr[x] + " & ";
+            }
+            else if (x == arr.length-1) {
+                str += arr[x];
+            }
+        }
+    }
+    return str;
 }
 var names = [{
     name: 'Bart'
 }, {
     name: 'Lisa'
 }, {
-    name: 'Maggie'
+    name: 'Lisa'
 }, {
-    name: 'Homer'
+    name: 'Lisa'
+}, {
+    name: 'Lisa'
 }];
-console.log(list(names));
+
+var g = [{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'}];
+console.log(list(g));
