@@ -1,6 +1,6 @@
 function accum(s) {
     newstr = "";
-    for (x in s) {
+    for (var x in s) {
 
         newstr += s[x].toUpperCase();
         newstr += s[x].toLocaleLowerCase().repeat(parseInt(x));
@@ -13,7 +13,7 @@ function accum(s) {
 }
 
 function getMiddle(s) {
-    if (s.length % 2 == 0) {
+    if (s.length % 2 === 0) {
         console.log("even");
         midIdx  = s.length/2;
         return s[midIdx-1]+s[midIdx];
@@ -27,21 +27,22 @@ function getMiddle(s) {
 
 function getSum(a, b) {
     function add(x,y) {return x+y;}
+    var arr = [];
+
     if ( a == b) {
         return a;
     }
     else if (a < b) {
         console.log("a less b");
-        var arr = [];
+
         for ( count = a; count <= b; count++ ){
             arr.push(count);
         }
-
         return arr.reduce(add,0);
     }
     else if (a > b) {
         console.log("a gret b");
-        var arr = [];
+
         for ( count = b; count <= a; count++ ){
             arr.push(count);
         }
@@ -52,11 +53,11 @@ function getSum(a, b) {
 console.log(getSum(6,-1));
 
 function list(names){
-    function catThemUp(a,b) { return a + ',' + b};
-    for (x in names) {
+    function catThemUp(a,b) { return a + ',' + b; }
+    for (var x in names) {
         console.log(names[x].name);
     }
-    return "asas";
+    return "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
 }
 var names = [{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'}];
 console.log(list(names));
